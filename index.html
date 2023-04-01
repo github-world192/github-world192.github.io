@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
 </head>
 <body>
     <div style="display:inline">
@@ -12,9 +13,43 @@
         <img src="web-design.png" alt="no" width="50" height="60" >
         <h1 style="text-align: left; color: purple;">師大課程小幫手</h1>
     </div>
-    <p style="font-size: 24px;color: green;">一個讓你大學生活更方便的應用程式</p>
+    <p style="font-size: 30px;color: black;padding-left: 30px;">一個讓你大學生活更方便的應用程式</p>
+<div class="navbar">
+  <a href="./index.html" class="active">首頁</a>
+  <a href="./tutorial.html">教學</a>
+  <a href="./about.html">關於我們</a>
+</div>
 </body>
 <style>
+@media only screen and (max-width: 600px) {
+  
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+ 
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 50px;
+}
+
+.navbar a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+    body{
+        background-color:rgb(182, 243, 225) ;
+    }
     img {
   float: left;
   padding-left: 40%;

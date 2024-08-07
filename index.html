@@ -1,11 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <style>
+    body {
+      background: linear-gradient(45deg, #000, #333);
+    }
+    h1 {
+      text-align: center;
+      font-size: 120px;
+      font-family: Helvetica, Verdana, Arial;
+      background: linear-gradient(to right, #007bff, #6a32c2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 
+        0 0 10px rgba(0, 123, 255, 0.8),
+        0 0 20px rgba(0, 123, 255, 0.6),
+        0 0 30px rgba(0, 123, 255, 0.4),
+        0 0 40px rgba(0, 123, 255, 0.2),
+        0 0 80px rgba(0, 123, 255, 0.1);
+      animation: colorFlow 5s infinite;
+    }
+    @keyframes colorFlow {
+      0% {
+        background-position: 0% 50%;
+      }
+      100% {
+        background-position: 100% 50%;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>hi</h1>
+  <h1>霓虹燈</h1>
 </body>
 </html>

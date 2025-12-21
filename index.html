@@ -3,59 +3,432 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dillen's Portfolio</title>
+    <title>CloudFlow - 企業級雲端協作平台</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#3b82f6',
+              secondary: '#8b5cf6',
+            }
+          }
+        }
+      }
+    </script>
   </head>
-  <body class="bg-gray-100 text-gray-800">
-    <div class="max-w-3xl mx-auto py-10 px-4">
-      <!-- Header -->
-      <header class="text-center mb-10">
-        <h1 class="text-4xl font-bold mb-2">Dillen</h1>
-        <p class="text-lg text-gray-600">App & Game Developer</p>
-        <p class="mt-2 text-sm">熱愛創造有趣的互動體驗</p>
-      </header>
-
-      <!-- Skills -->
-      <section class="mb-10">
-        <h2 class="text-2xl font-semibold mb-4">技能</h2>
-        <ul class="flex flex-wrap gap-3">
-          <li class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">JavaScript</li>
-          <li class="bg-green-100 text-green-800 px-3 py-1 rounded-full">Unity</li>
-          <li class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full">Flutter</li>
-          <li class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full">TypeScript</li>
-          <li class="bg-red-100 text-red-800 px-3 py-1 rounded-full">Node.js</li>
-        </ul>
-      </section>
-
-      <!-- Projects -->
-      <section class="mb-10">
-        <h2 class="text-2xl font-semibold mb-4">專案</h2>
-        <div class="space-y-6">
-          <div class="bg-white p-5 rounded-lg shadow">
-            <h3 class="text-xl font-bold">🚀 我的 App</h3>
-            <p class="text-sm text-gray-600">一款使用 Flutter 製作的行動應用程式，實現了 XXX 功能。</p>
-            <div class="mt-2">
-              <a href="#" class="text-blue-500 hover:underline mr-4">Demo</a>
-              <a href="#" class="text-gray-700 hover:underline">GitHub</a>
-            </div>
+  <body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex items-center">
+            <span class="text-2xl font-bold text-primary">CloudFlow</span>
           </div>
+          <div class="hidden md:flex space-x-8">
+            <a href="#features" class="text-gray-700 hover:text-primary transition">功能特色</a>
+            <a href="#pricing" class="text-gray-700 hover:text-primary transition">方案價格</a>
+            <a href="#faq" class="text-gray-700 hover:text-primary transition">常見問題</a>
+          </div>
+          <div class="flex space-x-4">
+            <button class="text-gray-700 hover:text-primary transition font-medium">登入</button>
+            <button class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition">免費試用</button>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-          <div class="bg-white p-5 rounded-lg shadow">
-            <h3 class="text-xl font-bold">🎮 我的遊戲</h3>
-            <p class="text-sm text-gray-600">用 Unity 開發的 2D 遊戲，結合策略與即時操作，挑戰玩家的反應與思維。</p>
-            <div class="mt-2">
-              <a href="#" class="text-blue-500 hover:underline mr-4">Play</a>
-              <a href="#" class="text-gray-700 hover:underline">GitHub</a>
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-blue-50 via-white to-purple-50 py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h1 class="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            讓團隊協作更簡單
+          </h1>
+          <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+            CloudFlow 提供強大的雲端協作工具，幫助您的團隊提升 3 倍生產力，隨時隨地輕鬆完成任務
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <button class="bg-primary text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-600 transition shadow-lg hover:shadow-xl">
+              開始免費試用 14 天
+            </button>
+            <button class="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-lg text-lg font-semibold hover:border-primary hover:text-primary transition">
+              觀看示範影片
+            </button>
+          </div>
+          <p class="mt-4 text-sm text-gray-500">無需信用卡 • 隨時可取消</p>
+
+          <!-- Hero Image Placeholder -->
+          <div class="mt-16 bg-white rounded-2xl shadow-2xl p-4 max-w-5xl mx-auto">
+            <div class="bg-gradient-to-br from-blue-100 to-purple-100 rounded-xl h-96 flex items-center justify-center">
+              <span class="text-6xl">📊</span>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Contact -->
-      <section class="text-center">
-        <h2 class="text-2xl font-semibold mb-2">聯絡我</h2>
-        <p>Email: <a href="mailto:your@email.com" class="text-blue-600">your@email.com</a></p>
-      </section>
-    </div>
+    <!-- Social Proof -->
+    <section class="bg-white py-12 border-b border-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p class="text-center text-gray-500 mb-8">超過 10,000 家企業信賴我們</p>
+        <div class="flex flex-wrap justify-center items-center gap-12 opacity-50">
+          <div class="text-2xl font-bold">公司 A</div>
+          <div class="text-2xl font-bold">公司 B</div>
+          <div class="text-2xl font-bold">公司 C</div>
+          <div class="text-2xl font-bold">公司 D</div>
+          <div class="text-2xl font-bold">公司 E</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4">強大功能，一應俱全</h2>
+          <p class="text-xl text-gray-600">所有您需要的工具，都在 CloudFlow</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Feature 1 -->
+          <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition">
+            <div class="text-4xl mb-4">⚡</div>
+            <h3 class="text-2xl font-bold mb-3">即時協作</h3>
+            <p class="text-gray-600">
+              團隊成員可以即時編輯文件、分享想法，無縫協作，提升工作效率
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition">
+            <div class="text-4xl mb-4">🔒</div>
+            <h3 class="text-2xl font-bold mb-3">企業級安全</h3>
+            <p class="text-gray-600">
+              符合 ISO 27001、SOC 2 標準，256-bit 加密保護您的資料安全
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition">
+            <div class="text-4xl mb-4">📊</div>
+            <h3 class="text-2xl font-bold mb-3">數據分析</h3>
+            <p class="text-gray-600">
+              深入了解團隊績效，透過視覺化報表做出更明智的決策
+            </p>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition">
+            <div class="text-4xl mb-4">🔗</div>
+            <h3 class="text-2xl font-bold mb-3">整合串接</h3>
+            <p class="text-gray-600">
+              支援 100+ 種常用工具整合，包括 Slack、Google Drive、Salesforce
+            </p>
+          </div>
+
+          <!-- Feature 5 -->
+          <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition">
+            <div class="text-4xl mb-4">📱</div>
+            <h3 class="text-2xl font-bold mb-3">跨平台支援</h3>
+            <p class="text-gray-600">
+              支援 Web、iOS、Android，讓您隨時隨地都能工作
+            </p>
+          </div>
+
+          <!-- Feature 6 -->
+          <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition">
+            <div class="text-4xl mb-4">🎯</div>
+            <h3 class="text-2xl font-bold mb-3">自動化流程</h3>
+            <p class="text-gray-600">
+              建立自動化工作流程，節省時間，專注於重要的事情
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4">簡單透明的價格方案</h2>
+          <p class="text-xl text-gray-600">選擇最適合您團隊的方案</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <!-- Basic Plan -->
+          <div class="border-2 border-gray-200 rounded-2xl p-8 hover:border-primary transition">
+            <h3 class="text-2xl font-bold mb-2">基礎版</h3>
+            <div class="mb-6">
+              <span class="text-4xl font-bold">NT$ 299</span>
+              <span class="text-gray-600">/月/用戶</span>
+            </div>
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>最多 10 位成員</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>10GB 儲存空間</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>基本整合功能</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Email 支援</span>
+              </li>
+            </ul>
+            <button class="w-full border-2 border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary hover:text-white transition">
+              開始使用
+            </button>
+          </div>
+
+          <!-- Pro Plan -->
+          <div class="border-2 border-primary rounded-2xl p-8 relative bg-blue-50 shadow-xl scale-105">
+            <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-sm font-semibold">
+              最受歡迎
+            </div>
+            <h3 class="text-2xl font-bold mb-2">專業版</h3>
+            <div class="mb-6">
+              <span class="text-4xl font-bold">NT$ 599</span>
+              <span class="text-gray-600">/月/用戶</span>
+            </div>
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>無限成員</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>100GB 儲存空間</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>進階整合與自動化</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>優先客服支援</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>進階分析報表</span>
+              </li>
+            </ul>
+            <button class="w-full bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition shadow-lg">
+              開始使用
+            </button>
+          </div>
+
+          <!-- Enterprise Plan -->
+          <div class="border-2 border-gray-200 rounded-2xl p-8 hover:border-primary transition">
+            <h3 class="text-2xl font-bold mb-2">企業版</h3>
+            <div class="mb-6">
+              <span class="text-4xl font-bold">客製化</span>
+            </div>
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>無限成員</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>無限儲存空間</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>客製化整合方案</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>24/7 專屬客服</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>專屬客戶經理</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>SLA 保證</span>
+              </li>
+            </ul>
+            <button class="w-full border-2 border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary hover:text-white transition">
+              聯絡我們
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gradient-to-br from-blue-50 to-purple-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4">客戶怎麼說</h2>
+          <p class="text-xl text-gray-600">來自全球企業的真實評價</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white p-8 rounded-xl shadow-md">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                王
+              </div>
+              <div>
+                <div class="font-bold">王小明</div>
+                <div class="text-sm text-gray-600">產品經理，科技公司</div>
+              </div>
+            </div>
+            <p class="text-gray-700">
+              "CloudFlow 徹底改變了我們的工作方式，團隊協作效率提升了 3 倍，強烈推薦！"
+            </p>
+            <div class="mt-4 text-yellow-400">★★★★★</div>
+          </div>
+
+          <div class="bg-white p-8 rounded-xl shadow-md">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                李
+              </div>
+              <div>
+                <div class="font-bold">李美華</div>
+                <div class="text-sm text-gray-600">執行長，新創公司</div>
+              </div>
+            </div>
+            <p class="text-gray-700">
+              "介面直覺、功能強大，完全滿足我們新創團隊快速成長的需求。"
+            </p>
+            <div class="mt-4 text-yellow-400">★★★★★</div>
+          </div>
+
+          <div class="bg-white p-8 rounded-xl shadow-md">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                陳
+              </div>
+              <div>
+                <div class="font-bold">陳志豪</div>
+                <div class="text-sm text-gray-600">IT 主管，製造業</div>
+              </div>
+            </div>
+            <p class="text-gray-700">
+              "安全性和穩定性都非常好，客服團隊也很專業，是值得信賴的夥伴。"
+            </p>
+            <div class="mt-4 text-yellow-400">★★★★★</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4">常見問題</h2>
+          <p class="text-xl text-gray-600">找不到答案嗎？歡迎聯絡我們</p>
+        </div>
+
+        <div class="space-y-6">
+          <div class="border border-gray-200 rounded-lg p-6 hover:border-primary transition">
+            <h3 class="text-xl font-bold mb-2">如何開始使用 CloudFlow？</h3>
+            <p class="text-gray-600">
+              只需要點擊「免費試用」按鈕，填寫基本資訊即可開始 14 天的免費試用，無需信用卡。
+            </p>
+          </div>
+
+          <div class="border border-gray-200 rounded-lg p-6 hover:border-primary transition">
+            <h3 class="text-xl font-bold mb-2">可以隨時取消訂閱嗎？</h3>
+            <p class="text-gray-600">
+              當然可以！您可以隨時在帳戶設定中取消訂閱，不會有任何額外費用或綁約問題。
+            </p>
+          </div>
+
+          <div class="border border-gray-200 rounded-lg p-6 hover:border-primary transition">
+            <h3 class="text-xl font-bold mb-2">資料安全嗎？</h3>
+            <p class="text-gray-600">
+              我們使用業界標準的 256-bit 加密技術，並符合 ISO 27001、SOC 2 等國際安全標準，您的資料絕對安全。
+            </p>
+          </div>
+
+          <div class="border border-gray-200 rounded-lg p-6 hover:border-primary transition">
+            <h3 class="text-xl font-bold mb-2">支援哪些支付方式？</h3>
+            <p class="text-gray-600">
+              我們支援信用卡、銀行轉帳、PayPal 等多種支付方式，企業客戶也可以選擇月結服務。
+            </p>
+          </div>
+
+          <div class="border border-gray-200 rounded-lg p-6 hover:border-primary transition">
+            <h3 class="text-xl font-bold mb-2">有提供教育訓練嗎？</h3>
+            <p class="text-gray-600">
+              專業版和企業版客戶可以獲得免費的線上培訓課程，我們也提供客製化的現場教育訓練服務。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-4xl font-bold mb-6">準備好提升團隊生產力了嗎？</h2>
+        <p class="text-xl mb-8 opacity-90">
+          立即開始 14 天免費試用，體驗 CloudFlow 帶來的改變
+        </p>
+        <button class="bg-white text-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition shadow-lg hover:shadow-xl">
+          免費開始使用
+        </button>
+        <p class="mt-4 text-sm opacity-75">無需信用卡 • 隨時可取消 • 14 天全功能試用</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-2xl font-bold mb-4">CloudFlow</h3>
+            <p class="text-gray-400">讓團隊協作更簡單的雲端平台</p>
+          </div>
+
+          <div>
+            <h4 class="font-semibold mb-4">產品</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li><a href="#" class="hover:text-white transition">功能特色</a></li>
+              <li><a href="#" class="hover:text-white transition">方案價格</a></li>
+              <li><a href="#" class="hover:text-white transition">整合服務</a></li>
+              <li><a href="#" class="hover:text-white transition">API 文件</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-semibold mb-4">公司</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li><a href="#" class="hover:text-white transition">關於我們</a></li>
+              <li><a href="#" class="hover:text-white transition">部落格</a></li>
+              <li><a href="#" class="hover:text-white transition">職涯機會</a></li>
+              <li><a href="#" class="hover:text-white transition">聯絡我們</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-semibold mb-4">法律</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li><a href="#" class="hover:text-white transition">隱私權政策</a></li>
+              <li><a href="#" class="hover:text-white transition">服務條款</a></li>
+              <li><a href="#" class="hover:text-white transition">Cookie 政策</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+          <p>&copy; 2025 CloudFlow. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
